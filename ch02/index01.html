@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테스트</title>
+  </head>
+  <body>
+    <h1>Tenco 온라인에 오신걸 환영합니다!</h1>
+    <img id="sample-img" src="./img/sample.png" alt="샘플 이미지" />
+    <p style="color: blue">버튼을 눌러 메세지를 변경해보세요</p>
+    <button onclick="changeMessage()">메세지변경</button>
+    <!-- 자바 스크립트 언어를 사용할수 있는 스코브-->
+    <script>
+      function changeMessage() {
+        console.log("함수 호출");
+        var img = document.getElementById("sample-img");
+        if (img) {
+          img.src = "./img/sample2.png";
+        }
+      }
+    </script>
+  </body>
+</html>

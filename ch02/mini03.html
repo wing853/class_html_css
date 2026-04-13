@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #1a192d;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-top: 50px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      button {
+        background-color: #d75264;
+        color: white;
+        padding: 15px 30px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>나는 로봇</h1>
+    <p>이름: 코딩봇</p>
+    <p>나이: 1살</p>
+    <button onclick="sayHello()">인사하기</button>
+    <p id="message">텍스트 컨텐츠</p>
+
+    <script>
+      let count = 0;
+      function sayHello() {
+        count++;
+        const messageArr = [
+          "안녕하세요! 반갑습니다",
+          "또 눌렀네요 감사해요",
+          "벌써 3번째 우리 친해지는건가요",
+          "저좀 쉬어도 될까요...",
+        ];
+
+        let pTag = document.getElementById("message");
+
+        pTag.textContent = messageArr[count % messageArr.length];
+      }
+    </script>
+  </body>
+</html>
