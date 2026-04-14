@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      /* 결합 선택자 중간 기호가 공백: h1태그에 모든 자손들(하위 선택자) */
+      h1 p {
+        /* 현재 h1태그에는 자손이 없음 */
+        color: green;
+      }
+
+      /* 인접 형제 선택자 */
+      h1 + p {
+        color: aqua;
+      }
+
+      /* 선택 뒤에 오는 선택된 태그의 인접 형제 선택자 */
+      h1 ~ p {
+        color: blue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <p>가나라다마바사</p>
+    <h1>여기가 h1 태그야</h1>
+    <p>가나라다마바사</p>
+    <p>가나라다마바사</p>
+    <p>가나라다마바사</p>
+    <div><p>12345678</p></div>
+  </body>
+</html>

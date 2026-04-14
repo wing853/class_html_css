@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input[type="text"] {
+        border: 1px solid gray;
+        padding: 5px;
+        width: 220px;
+      }
+
+      input[type="submit"] {
+        border: none;
+        padding: 25px;
+      }
+
+      /* [속성~=값]: 속성 값에 특정 단어가 포함된 경우 선택가능  */
+      p[class~="highlight"] {
+        background-color: yellow;
+        padding: 50px;
+        border: 1px dashed red;
+      }
+
+      [data-role] {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="텍스트 입력" />
+    <input type="submit" value="제출" />
+    <p class="content highlight main">강조된 문단입니다</p>
+    <div class="card">카드 형테의 컨텐츠입니다.</div>
+    <span data-role="viewer editor">편집자 역할입니다.</span>
+  </body>
+</html>
