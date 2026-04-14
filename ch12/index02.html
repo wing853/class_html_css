@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+      }
+
+      .star {
+        position: absolute;
+        font-size: 30px;
+      }
+
+      .spaceship {
+        font-size: 30px;
+        /* 부모태그 기준으로 결정 */
+        /* position: absolute; */
+        /* 화면 기준으로 고정 */
+        position: fixed;
+        top: 50px;
+        right: 50px;
+        z-index: 100;
+      }
+
+      .planet {
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="star" style="top: 50px; left: 100px">✨</div>
+    <div class="star" style="top: 150px; left: 300px">✨</div>
+    <div class="star" style="top: 350px; left: 150px">✨</div>
+    <div class="star" style="top: 2200px; left: 450px">✨</div>
+    <div class="planet"></div>
+    <div class="spaceship">🚀</div>
+  </body>
+</html>
