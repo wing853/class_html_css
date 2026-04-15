@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: #22293a;
+        text-align: center;
+        padding: 15px;
+        color: white;
+        height: 60px;
+      }
+      .main {
+        display: flex;
+        height: 100vh;
+        background-color: #f1f5f9;
+      }
+
+      div.card {
+        background-color: #5f82ed;
+        width: calc(33.333% - 7px);
+        margin-left: 3.5px;
+        margin-right: 3.5px;
+        text-align: center;
+        border-radius: 10px;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">헤더(60px 고정)</header>
+    <main class="main">
+      <div class="card">calc(33.333% - 7px)</div>
+      <div class="card">calc(33.333% - 7px)</div>
+      <div class="card">calc(33.333% - 7px)</div>
+    </main>
+  </body>
+</html>
