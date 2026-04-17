@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- 패턴6 스티키 푸터
+   content-wrapper가 남은공간 전부차지 -> footer를 맨아래로 밀어냄 
+   -->
+    <div class="content-wrapper">
+      <!-- 패턴 1: 완전 가운데 정렬 -->
+      <section class="align-center">
+        <div class="center">패턴1: 완전 가운데</div>
+      </section>
+
+      <!-- 패턴 2: 네비게이션 바 -->
+      <nav class="nav">
+        <span class="logo">Logo</span>
+        <div class="menu">
+          <a href="#">메뉴1</a>
+          <a href="#">메뉴2</a>
+          <a href="#">메뉴3</a>
+        </div>
+      </nav>
+
+      <!-- 패턴3: 카드 그리드 -->
+      <section class="card-grid">
+        <div class="card">카드1</div>
+        <div class="card">카드2</div>
+        <div class="card">카드3</div>
+        <div class="card">카드4</div>
+      </section>
+
+      <!-- 패턴4: 사이드바 + 메인 -->
+      <div class="layout">
+        <div class="sidebar">사이드바</div>
+        <main class="main">메인콘텐츠</main>
+      </div>
+
+      <!-- 패턴5: 히어로 섹션 -->
+      <section class="hero">
+        <h1>히어로섹션</h1>
+      </section>
+
+      <!-- 패턴7 반응형 2단 -> 1단 -->
+      <div class="container">
+        <div class="left">왼쪽</div>
+        <div class="right">오른쪽</div>
+      </div>
+    </div>
+    <!-- footer는 content-wrapper밖에있어야 맨아래 고정 -->
+    <footer>&copy;2025 CSS Layout Patterns. All rights reserved.</footer>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eff2fd;
+  padding: 50px;
+}
+
+.center {
+  color: white;
+  background-color: #5748dc;
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.nav {
+  margin-top: 10px;
+  background-color: #1e293c;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.logo {
+  color: white;
+}
+
+.menu a {
+  color: #657285;
+  text-decoration-line: none;
+  margin: 10px;
+}
+
+.card-grid {
+  margin-top: 10px;
+  display: flex;
+  padding: 30px;
+  background-color: #eff2fd;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px 40px;
+  flex: 1 1 250px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.layout {
+  margin-top: 10px;
+  display: flex;
+  height: 30vh;
+}
+
+.sidebar {
+  background-color: #22293a;
+  color: white;
+  padding: 10px;
+  width: 300px;
+}
+
+.main {
+  background-color: #eff2fd;
+  padding: 10px;
+  flex: 1;
+}
+
+.hero {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://picsum.photos/seed/buliding/1200/600") center/cover;
+}
+
+.hero h1 {
+  color: rgba(255, 255, 255, 0.853);
+  font-size: 48px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
