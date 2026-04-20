@@ -1,0 +1,119 @@
+/* CSS 변수: 색상 테마를 한 곳에서 관리 */
+:root {
+  --apple-black: #000000;
+  --apple-gray: #86868b;
+  --apple-blue: #0071e3;
+  --apple-white: #f5f5f7;
+}
+
+/* 1단계: 리셋 + 전역 스타일 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--apple-black);
+  color: var(--apple-white);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 2단계: 레이아웃 */
+.site-header {
+  /* 스크롤을 해도 화면 상단에 고정 z-index:100 다른 요소위에 항상 보이도록 설정 */
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.features {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feature-cards {
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  color: var(--apple-gray);
+  font-size: 16px;
+  padding-left: 25px;
+}
+
+.hero h1 {
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: var(--apple-gray);
+}
+
+.btn-primary {
+  background-color: var(--apple-blue);
+  border-radius: 24px;
+  padding: 12px 24px;
+  color: var(--apple-white);
+  transition: opacity 0.3s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.8;
+}
+
+.btn-secondary {
+  padding: 12px 24px;
+}
+
+.features h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.feature-card {
+  padding: 40px;
+  background-color: #1d1d1f;
+  border-radius: 16px;
+  text-align: center;
+  transition: transform 0.4s ease;
+}
+
+.feature-card:hover {
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 20px 40px rgba(255, 255, 255, 0.1);
+}
+
+.footer {
+  padding: 40px;
+}
+
+.footer p {
+  color: var(--apple-gray);
+  text-align: center;
+}
