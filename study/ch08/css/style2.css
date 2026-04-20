@@ -1,0 +1,126 @@
+/* 1. reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* 2. 레이아웃잡기(큰 박스부터) */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #0073e9;
+  padding: 12px 20px;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+}
+
+.search-bar {
+  display: flex;
+  flex: 1;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+  background-color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.section-title {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0 20px;
+}
+
+/* 3. 세부 컴퍼넌트 */
+.product-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: calc(33.333% - 12px);
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.5s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 5px rgba(0, 0, 0, 0.5);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.product-card h3 {
+  font-size: 14px;
+  margin: 10px 0 5px;
+}
+
+.badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: blue;
+  color: white;
+  z-index: 100;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.badge-sale {
+  background-color: #ff0000;
+  top: 50px;
+}
+
+.price-original {
+  font-size: 14px;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.price-sale {
+  font-size: 18px;
+  font-weight: bold;
+  color: #111111;
+}
+
+.discount {
+  color: #ff0000;
+  font-size: 18px;
+}
+
+.rating {
+  color: #ff9500;
+}
+
+.delivery {
+  font-size: 12px;
+  color: #0073e9;
+}
