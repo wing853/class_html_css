@@ -1,0 +1,123 @@
+:root {
+  --gh-dark: #0d1117;
+  --gh-card: #161b22;
+  --gh-green: #39d353;
+  --gh-blue: #58a6ff;
+  --gh-border: #30363d;
+  --gh-font-color: #c9d1d9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--gh-dark);
+  color: var(--gh-font-color);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.gh-header {
+  display: flex;
+  align-items: center;
+  background-color: var(--gh-card);
+  padding: 15px 20px;
+  gap: 20px;
+}
+
+.gh-logo {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.gh-search {
+  background-color: var(--gh-dark);
+  padding: 8px;
+  border: 1px solid var(--gh-border);
+  border-radius: 6px;
+  color: white;
+}
+
+.gh-main {
+  display: flex;
+  gap: 24px;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.profile h2 {
+  font-size: 24px;
+  padding-top: 20px;
+  color: white;
+}
+
+.profile p {
+  padding-top: 15px;
+}
+
+.profile p a {
+  color: var(--gh-blue);
+  font-size: 18px;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.badge-html {
+  background-color: red;
+  color: white;
+}
+
+.badge-css {
+  background-color: blue;
+  color: white;
+}
+
+.badge-js {
+  color: black;
+  background-color: yellow;
+}
+
+.main-content {
+  padding: 20px 0;
+}
+
+.grass-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.grass {
+  width: 12px;
+  height: 12px;
+  padding: 6px;
+}
+
+.level-0 {
+  background-color: var(--gh-card);
+}
+
+.level-1 {
+  background-color: #014429;
+}
+
+.level-2 {
+  background-color: var(--gh-green);
+}
